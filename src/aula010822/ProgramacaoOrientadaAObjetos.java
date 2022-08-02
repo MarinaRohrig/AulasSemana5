@@ -1,6 +1,6 @@
 package aula010822;
 
-import outropacote.Bicicleta;
+import aula010822.outropacote.Bicicleta;
 
 /*
 Data: 01/08/22
@@ -26,7 +26,7 @@ public class ProgramacaoOrientadaAObjetos {
         // chama novamente o método buzinar da classe carro
         unoDeFirma.buzinar();
 
-        // Chama a classe Bicicleta que está em outropacote , portanto é preciso importar ela
+        // Chama a classe Bicicleta que está em aula010822.outropacote , portanto é preciso importar ela
         Bicicleta bike = new Bicicleta();
 
         // instanciar um novo Carro
