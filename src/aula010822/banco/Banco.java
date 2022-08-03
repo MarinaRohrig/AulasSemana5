@@ -1,5 +1,7 @@
 package aula010822.banco;
 
+import aula020822.Conta;
+
 import java.util.Scanner;
 
 /*
@@ -14,9 +16,9 @@ public class Banco {
 
         System.out.println("**** Bem-Vindo ao Banco! ****");
         System.out.println("Digite seu nome");
-        minhaConta.nomeTitular = scanner.nextLine();
+        minhaConta.titular.nome = scanner.nextLine();
         System.out.println("Como no exemplo: R$2900.50");
-        System.out.println(minhaConta.nomeTitular+" digite seu saldo");
+        System.out.println(minhaConta.titular.nome+" digite seu saldo");
         minhaConta.saldo = Double.parseDouble(scanner.nextLine());
         do {
             System.out.println("");
@@ -39,7 +41,7 @@ public class Banco {
                     break;
                 }
                 case 3: {
-                    System.out.printf("O cliente %s possuí saldo de R$%.2f %n", minhaConta.nomeTitular, minhaConta.saldo);
+                    System.out.printf("O cliente %s possuí saldo de R$%.2f %n", minhaConta.titular.nome, minhaConta.saldo);
                     break;
                 }
                 case 4: {
